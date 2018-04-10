@@ -14,6 +14,9 @@
 		2497486D207D622800AA1BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2497486B207D622800AA1BEA /* LaunchScreen.storyboard */; };
 		24974878207D622900AA1BEA /* Promise_Child_CardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24974877207D622900AA1BEA /* Promise_Child_CardsTests.swift */; };
 		24974883207D622900AA1BEA /* Promise_Child_CardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24974882207D622900AA1BEA /* Promise_Child_CardsUITests.swift */; };
+		24974891207D6B2400AA1BEA /* CreateCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24974890207D6B2400AA1BEA /* CreateCardVC.swift */; };
+		24974893207D6F5B00AA1BEA /* ViewCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24974892207D6F5B00AA1BEA /* ViewCardsVC.swift */; };
+		24974895207D6F7000AA1BEA /* TutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24974894207D6F7000AA1BEA /* TutorialVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2497487E207D622900AA1BEA /* Promise Child CardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Promise Child CardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24974882207D622900AA1BEA /* Promise_Child_CardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise_Child_CardsUITests.swift; sourceTree = "<group>"; };
 		24974884207D622900AA1BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24974890207D6B2400AA1BEA /* CreateCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCardVC.swift; sourceTree = "<group>"; };
+		24974892207D6F5B00AA1BEA /* ViewCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCardsVC.swift; sourceTree = "<group>"; };
+		24974894207D6F7000AA1BEA /* TutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +103,10 @@
 		24974861207D622700AA1BEA /* Promise Child Cards */ = {
 			isa = PBXGroup;
 			children = (
-				24974862207D622700AA1BEA /* AppDelegate.swift */,
-				24974864207D622700AA1BEA /* ViewController.swift */,
+				24974896207D6F7B00AA1BEA /* View Controllers */,
 				24974866207D622700AA1BEA /* Main.storyboard */,
 				24974869207D622800AA1BEA /* Assets.xcassets */,
+				24974862207D622700AA1BEA /* AppDelegate.swift */,
 				2497486B207D622800AA1BEA /* LaunchScreen.storyboard */,
 				2497486E207D622800AA1BEA /* Info.plist */,
 			);
@@ -123,6 +129,17 @@
 				24974884207D622900AA1BEA /* Info.plist */,
 			);
 			path = "Promise Child CardsUITests";
+			sourceTree = "<group>";
+		};
+		24974896207D6F7B00AA1BEA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				24974864207D622700AA1BEA /* ViewController.swift */,
+				24974890207D6B2400AA1BEA /* CreateCardVC.swift */,
+				24974892207D6F5B00AA1BEA /* ViewCardsVC.swift */,
+				24974894207D6F7000AA1BEA /* TutorialVC.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24974865207D622700AA1BEA /* ViewController.swift in Sources */,
+				24974893207D6F5B00AA1BEA /* ViewCardsVC.swift in Sources */,
+				24974891207D6B2400AA1BEA /* CreateCardVC.swift in Sources */,
+				24974895207D6F7000AA1BEA /* TutorialVC.swift in Sources */,
 				24974863207D622700AA1BEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

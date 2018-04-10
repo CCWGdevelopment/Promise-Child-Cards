@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,189 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Promise_Child_Cards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xFk-ZP-cB9">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="It4-cG-MnD">
+                                        <rect key="frame" x="234" y="256" width="180" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Create Card">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createCardsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ti-ue-2WW"/>
+                                            <segue destination="2Aq-dL-Jqa" kind="show" identifier="createCards" id="X2R-2O-zWg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEr-lb-GNf">
+                                        <rect key="frame" x="610" y="432" width="180" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Upload Cards">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="uploadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9lR-5Z-Vos"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oy-HI-brO">
+                                        <rect key="frame" x="610" y="256" width="180" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="View Cards">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewCardsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8t-go-JSE"/>
+                                            <segue destination="TCX-mp-Xxb" kind="show" identifier="viewCards" id="vuh-zT-fP4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0l-36-RG7">
+                                        <rect key="frame" x="234" y="432" width="180" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Tutorial">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tutorialButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zyE-bD-CFs"/>
+                                            <segue destination="zHK-xe-Bdm" kind="show" identifier="tutorial" id="o4G-St-Xkd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xFk-ZP-cB9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VF8-hJ-wlp"/>
+                            <constraint firstItem="xFk-ZP-cB9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lTj-4C-4hR"/>
+                            <constraint firstItem="xFk-ZP-cB9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pam-c8-jar"/>
+                            <constraint firstAttribute="trailing" secondItem="xFk-ZP-cB9" secondAttribute="trailing" id="zyB-IM-tJN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-98.4375" y="118.75"/>
+        </scene>
+        <!--Create CardVC-->
+        <scene sceneID="QWH-VR-whf">
+            <objects>
+                <viewController modalPresentationStyle="formSheet" id="2Aq-dL-Jqa" customClass="CreateCardVC" customModule="Promise_Child_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BXI-f3-7eE">
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BX8-Sf-aak">
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eaw-Qe-Ghg">
+                                        <rect key="frame" x="14" y="8" width="80" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="2Aq-dL-Jqa" eventType="touchUpInside" id="11t-M4-ws5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BX8-Sf-aak" firstAttribute="top" secondItem="PpP-VE-l3k" secondAttribute="top" id="097-ej-saJ"/>
+                            <constraint firstItem="BX8-Sf-aak" firstAttribute="bottom" secondItem="PpP-VE-l3k" secondAttribute="bottom" id="a2j-5V-Qmq"/>
+                            <constraint firstItem="BX8-Sf-aak" firstAttribute="leading" secondItem="BXI-f3-7eE" secondAttribute="leading" id="xMr-DF-96i"/>
+                            <constraint firstAttribute="trailing" secondItem="BX8-Sf-aak" secondAttribute="trailing" id="xvi-aD-Wbc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PpP-VE-l3k"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBh-EJ-bfH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578.90625" y="117.96875"/>
+        </scene>
+        <!--View CardsVC-->
+        <scene sceneID="zGz-Ft-CQf">
+            <objects>
+                <viewController id="TCX-mp-Xxb" customClass="ViewCardsVC" customModule="Promise_Child_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="huQ-4k-S6Z">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m6y-Vd-m58">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtD-Xq-ExO">
+                                <rect key="frame" x="10" y="10" width="80" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="TCX-mp-Xxb" eventType="touchUpInside" id="ofv-8l-47F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="m6y-Vd-m58" firstAttribute="bottom" secondItem="MWz-Rg-Cib" secondAttribute="bottom" id="2p5-hM-7F7"/>
+                            <constraint firstItem="m6y-Vd-m58" firstAttribute="leading" secondItem="huQ-4k-S6Z" secondAttribute="leading" id="Arg-Dh-yFo"/>
+                            <constraint firstAttribute="trailing" secondItem="m6y-Vd-m58" secondAttribute="trailing" id="Bwj-hY-mfU"/>
+                            <constraint firstItem="m6y-Vd-m58" firstAttribute="top" secondItem="huQ-4k-S6Z" secondAttribute="top" id="ka9-2c-ZwQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MWz-Rg-Cib"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4n-aV-n6d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="866"/>
+        </scene>
+        <!--TutorialVC-->
+        <scene sceneID="9aO-N8-vrk">
+            <objects>
+                <viewController id="zHK-xe-Bdm" customClass="TutorialVC" customModule="Promise_Child_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AXD-gO-NOa">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6p-5i-R2M">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEG-7e-CW4">
+                                <rect key="frame" x="10" y="10" width="80" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButton:" destination="zHK-xe-Bdm" eventType="touchUpInside" id="3nd-pU-Ybe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C6p-5i-R2M" firstAttribute="leading" secondItem="AXD-gO-NOa" secondAttribute="leading" id="bkp-pg-1pK"/>
+                            <constraint firstAttribute="trailing" secondItem="C6p-5i-R2M" secondAttribute="trailing" id="eTD-29-8iZ"/>
+                            <constraint firstItem="C6p-5i-R2M" firstAttribute="bottom" secondItem="ObW-12-234" secondAttribute="bottom" id="oDg-e0-aud"/>
+                            <constraint firstItem="C6p-5i-R2M" firstAttribute="top" secondItem="AXD-gO-NOa" secondAttribute="top" id="sik-x8-pYD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ObW-12-234"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6g-hx-hDA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579" y="866"/>
         </scene>
     </scenes>
 </document>
